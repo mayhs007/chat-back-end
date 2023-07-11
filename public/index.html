@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+</head>
+<style>
+     #chat-container {
+          width: 500px;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+
+     }
+
+     #chat-container>div {
+          width: 200px;
+          margin-top: 2.5%
+     }
+
+     #chat-container>#chat-other-message {
+          align-self: start;
+     }
+
+     #chat-container>#chat-my-message {
+          align-self: end;
+          text-align: end;
+     }
+
+     #chat-container>#chat-join-message {
+          align-self: center;
+          text-align: center;
+     }
+
+     #chat-form-container {
+          width: 100%;
+     }
+
+     #chat-form {
+          width: 100%;
+     }
+
+     #form-container {
+          margin-top: 2%;
+     }
+</style>
+
+<body>
+     <h1>Chat Application</h1>
+     <div id="chat-container">
+
+     </div>
+     <div id="form-container">
+          <form id="chat-form">
+               <input id="message-input" type="text" autocomplete="off" />
+               <button>Send</button>
+          </form>
+
+     </div>
+
+
+
+     <script src="/socket.io/socket.io.js">
+
+     </script>
+     <script src="index.js"></script>
+</body>
+
+</html>
